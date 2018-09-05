@@ -1,0 +1,15 @@
+{
+  "name": "samokasha.com",
+  "version": "1.0.0",
+  "description": "Personal website for Sam Okasha",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/materialize.scss css/materialize.css -w",
+    "compile:sass": "node-sass sass/materialize.scss css/materialize.css"
+  },
+  "author": "Sam Okasha",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
