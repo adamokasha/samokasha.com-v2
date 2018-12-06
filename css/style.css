@@ -34,8 +34,8 @@ h5 {
 header {
   background: -webkit-linear-gradient(
     45deg,
-    rgba(88, 72, 95, 0.85),
-    rgba(93, 49, 122, 0.849)
+    rgba(88, 72, 95, 0.8),
+    rgba(93, 49, 122, 0.8)
   );
 }
 
@@ -97,6 +97,12 @@ nav {
 .section-services ion-icon {
   font-size: 64px;
   padding: 1rem 0;
+}
+
+/* PORTFOLIO */
+.card-image span {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* ABOUT */
