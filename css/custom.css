@@ -62,6 +62,12 @@ header {
   padding: 0.5rem 7rem;
 }
 
+@media screen and (max-width: 600px) {
+  #landing-title h4 {
+    padding: 0.5rem 4rem;
+  }
+}
+
 /* NAVIGATION */
 
 nav {

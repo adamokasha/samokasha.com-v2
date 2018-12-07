@@ -6,30 +6,43 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <!-- Import materialize.css -->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.css"
-      media="screen,projection"
-    />
     <link
       type="text/css"
       rel="stylesheet"
       href="css/style.css"
       media="screen,projection"
     />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-130628118-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    <!-- Let browser know website is optimized for mobile -->
+      gtag("config", "UA-130628118-1");
+    </script>
+
+    <title>Sam Okasha - Web Developer</title>
+    <meta charset="utf-8">
+    <meta
+      name="description"
+      content="I am a full-stack web developer based in the Greater Toronto Area. I build websites and web apps using cutting edge Javascript, React, Node, Express, MongoDB and more. Get in touch with me to talk about any project you'd like to see happen."
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
-    <header>
+    <header id="header" class="scrollspy">
       <div class="parallax-container">
         <nav>
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo">{ S / O }</a>
+            <a href="#header" class="brand-logo">{ S / O }</a>
             <a href="#" data-target="mobile" class="sidenav-trigger"
               ><i class="material-icons">menu</i></a
             >
@@ -45,8 +58,12 @@
         <ul class="sidenav" id="mobile">
           <li>
             <div class="user-view">
-              <div class="background"><img src="img/sidenav.jpg" /></div>
-              <a href="#user"><img class="circle" src="img/sam.jpg"/></a>
+              <div class="background">
+                <img src="img/sidenav.jpg" alt="side nav background" />
+              </div>
+              <a href="#user"
+                ><img class="circle" src="img/sam.jpg" alt="avatar"
+              /></a>
               <a href="#name"
                 ><span class="white-text name">Sam Okasha</span></a
               >
@@ -90,7 +107,16 @@
             <strong>Web Developer</strong>
           </h4>
         </div>
-        <div class="parallax"><img src="img/hero.jpg" /></div>
+        <div class="parallax">
+          <picture>
+            <source media="(min-width: 1920px)" srcset="img/hero_1920.jpg" />
+            <source media="(min-width: 1600px)" srcset="img/hero_1600.jpg" />
+            <source media="(min-width: 1366px)" srcset="img/hero_1366.jpg" />
+            <source media="(min-width: 1024px)" srcset="img/hero_1024.jpg" />
+            <source media="(min-width: 768px)" srcset="img/hero_768.jpg" />
+            <img src="img/hero_640.jpg" alt="Hero" style="width:auto;" />
+          </picture>
+        </div>
       </div>
     </header>
 
@@ -175,10 +201,10 @@
         </div>
 
         <div class="row">
-          <div class="col s12 m4 l4">
+          <div class="col s12 m6 l4">
             <div class="card hoverable">
               <div class="card-image">
-                <img src="img/snapsapp.jpg" />
+                <img src="img/snapsapp_768.jpg" alt="snapsapp" />
                 <span class="card-title">SnapsApp</span>
               </div>
               <div class="card-content">
@@ -203,10 +229,10 @@
             </div>
           </div>
 
-          <div class="col s12 m4 l4">
+          <div class="col s12 m6 l4">
             <div class="card hoverable">
               <div class="card-image">
-                <img src="img/blog.jpg" />
+                <img src="img/blog_768.jpg" alt="blog" />
                 <span class="card-title">React-Redux Blog</span>
               </div>
               <div class="card-content">
@@ -237,10 +263,10 @@
             </div>
           </div>
 
-          <div class="col s12 m4 l4">
+          <div class="col s12 m6 l4">
             <div class="card hoverable">
               <div class="card-image">
-                <img src="img/guide.jpg" />
+                <img src="img/guide_768.jpg" alt="guide"/>
                 <span class="card-title"
                   >Algorithms and Data Structures Guide</span
                 >
@@ -385,7 +411,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="col s12 m4 l4 center-align">
+                <div class="col s12 m6 l4 center-align">
                   <div class="row">
                     <i class="material-icons medium"> place </i>
                     <p>Toronto, Ontario</p>
@@ -410,11 +436,11 @@
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Have any questions?</h5>
+            <h5 class="white-text">Available for hire</h5>
             <p class="grey-text text-lighten-4">
-              Drop me an email and we can talk about any personal or commercial
-              project you have in mind. I can most easily be reached via email.
-              Looking forward to working with you!
+              Drop me an email about any personal or commercial project you have
+              in mind or if you'd like for me to join your team. I can most
+              easily be reached via email. Looking forward to working with you!
             </p>
           </div>
           <div class="col l4 offset-l2 s12">
@@ -456,7 +482,6 @@
       </div>
     </footer>
 
-    <!-- JavaScript at end of body for optimized loading -->
     <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>

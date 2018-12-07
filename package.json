@@ -5,11 +5,19 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/materialize.scss css/materialize.css -w",
-    "compile:sass": "node-sass sass/materialize.scss css/materialize.css"
+    "compile:sass": "node-sass sass/materialize.scss css/materialize.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/materialize.comp.css css/custom.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "author": "Sam Okasha",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.9.3"
+    "autoprefixer": "^9.4.2",
+    "concat": "^1.0.3",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.0.1"
   }
 }

@@ -1,2 +1,7 @@
 node_modules
 materialize.css
+materialize.comp.css
+style.concat.css
+style.prefix.css
+style.css
+*.gz
