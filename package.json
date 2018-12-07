@@ -8,7 +8,7 @@
     "compile:sass": "node-sass sass/materialize.scss css/materialize.css"
   },
   "author": "Sam Okasha",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.9.3"
   }

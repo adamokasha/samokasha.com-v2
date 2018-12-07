@@ -1,33 +1,40 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const mainNav = document.querySelectorAll('nav')[0];
+document.addEventListener("DOMContentLoaded", function() {
+  const mainNav = document.querySelectorAll("nav")[0];
+
+  // ScrollSpy smooth scrolling
+  const scrollSpyOpts = {
+    throttle: 100,
+    scrollOffset: 0
+  };
+  var elems = document.querySelectorAll(".scrollspy");
+  var instances = M.ScrollSpy.init(elems, scrollSpyOpts);
 
   //Side nav toggle
-  const sidenav = document.querySelectorAll('.sidenav');
+  const sidenav = document.querySelectorAll(".sidenav");
   const sidenavInstance = M.Sidenav.init(sidenav);
-  
+
   var instance = M.Sidenav.getInstance(sidenav);
 
   sidenavInstance[0].options.onOpenStart = () => {
-    mainNav.classList.add('nav--hidden');
+    mainNav.classList.add("nav--hidden");
   };
 
   sidenavInstance[0].options.onCloseEnd = () => {
-    mainNav.classList.remove('nav--hidden');
+    mainNav.classList.remove("nav--hidden");
   };
 
-
   // Parallax effect
-  const parallaxElems = document.querySelectorAll('.parallax');
+  const parallaxElems = document.querySelectorAll(".parallax");
   const parallaxinstances = M.Parallax.init(parallaxElems);
 
   // Nav dock effect
-  document.addEventListener('scroll', () => {
-    if(window.scrollY > mainNav.offsetHeight) {
-      mainNav.classList.add('scrolled');
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > mainNav.offsetHeight) {
+      mainNav.classList.add("scrolled");
     }
 
-    if(window.scrollY === 0) {
-      mainNav.classList.remove('scrolled');
+    if (window.scrollY === 0) {
+      mainNav.classList.remove("scrolled");
     }
-  })
+  });
 });
