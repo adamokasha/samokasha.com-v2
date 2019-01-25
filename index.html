@@ -28,7 +28,7 @@
     </script>
 
     <title>Sam Okasha - Web Developer</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta
       name="description"
       content="I am a full-stack web developer based in the Greater Toronto Area. I build websites and web apps using cutting edge Javascript, React, Node, Express, MongoDB and more. Get in touch with me to talk about any project you'd like to see happen."
@@ -124,7 +124,7 @@
       <section id="services" class="section-services scrollspy">
         <div class="container">
           <h2 class="center-align light"><strong>Services</strong></h2>
-          <p>
+          <p class="center-align">
             Whether you require a simple home page for your business or a
             full-fledged app, I believe it is essential that I provide you the
             services below.
@@ -191,7 +191,7 @@
       <section id="portfolio" class="section-portfolio scrollspy">
         <div class="container">
           <h2 class="center-align light"><strong>Portfolio</strong></h2>
-          <p>
+          <p class="center-align">
             Below are some of the projects I have most recently been working on.
             To see past projects as well as some boilerplate projects, visit my
             <a href="https//github.com/samokasha" target="_blank"
@@ -200,18 +200,20 @@
           </p>
         </div>
 
+        <div class="container container__portfolio-items">
         <div class="row">
-          <div class="col s12 m6 l4">
+          <div class="col s12 m12 ">
             <div class="card hoverable">
               <div class="card-image">
-                <img src="img/snapsapp_768.jpg" alt="snapsapp" />
-                <span class="card-title">SnapsApp</span>
-              </div>
+                  <div class="video-container">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Jffb_JHBtX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </div>
+                            </div>
               <div class="card-content">
                 <p>
                   SnapsApp is an image-sharing app built with the MERN stack and
                   styled with the Material-UI library.
                 </p>
+                
                 <p>
                   Built using <strong>ReactJs</strong>, <strong>NodeJs</strong>,
                   <strong>MongoDb</strong>, <strong>Material-UI</strong> and
@@ -219,9 +221,8 @@
                 </p>
               </div>
               <div class="card-action">
-                <a href="https://snapsapp.herokuapp.com" target="_blank"
-                  >Live Demo</a
-                >
+                <a href="https://www.youtube.com/watch?v=Jffb_JHBtX8&t=155s" target="_blank">Video Demo</a>
+                <a href="https://snapsapp.net" target="_blank">Live Demo</a>
                 <a href="https://github.com/samokasha/snapsapp" target="_blank"
                   >Repo</a
                 >
@@ -229,7 +230,7 @@
             </div>
           </div>
 
-          <div class="col s12 m6 l4">
+          <div class="col s12 m12 ">
             <div class="card hoverable">
               <div class="card-image">
                 <img src="img/blog_768.jpg" alt="blog" />
@@ -242,9 +243,8 @@
                 </p>
                 <p>
                   Built using <strong>ReactJs</strong>, <strong>NodeJs</strong>,
-                  <strong>MongoDb</strong>, <strong>BootStrap 4</strong>,
+                  <strong>MongoDb</strong>, <strong>Bootstrap 4</strong>,
                   <strong>Jest</strong>, <strong>Enzyme</strong> and more.
-                  <br /><br />
                 </p>
               </div>
               <div class="card-action">
@@ -263,10 +263,10 @@
             </div>
           </div>
 
-          <div class="col s12 m6 l4">
+          <div class="col s12 m12 ">
             <div class="card hoverable">
               <div class="card-image">
-                <img src="img/guide_768.jpg" alt="guide"/>
+                <img src="img/guide_768.jpg" alt="guide" />
                 <span class="card-title"
                   >Algorithms and Data Structures Guide</span
                 >
@@ -288,7 +288,40 @@
               </div>
             </div>
           </div>
+
+
+
+
+          <div class="col s12 m12 ">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <img src="img/weather_768.jpg" alt="snapsapp" />
+                  <span class="card-title">React Weather</span>
+                </div>
+                <div class="card-content">
+                  <p>
+                      A small weather app that saves up to 20 user defined locations. Built using the new <strong>React Hooks system</strong>.
+
+                  </p>
+                  <p>
+                    Built using <strong>ReactJs</strong>, <strong>Open Weather API</strong>, <strong>Material-UI</strong> and
+                    more.
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a href="https://react-weather-hooks.herokuapp.com/" target="_blank">Live Demo</a>
+                  <a href="https://github.com/samokasha/react-weather-hooks" target="_blank"
+                    >Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+
         </div>
+
+      </div>
+
+
       </section>
 
       <div class="divider"></div>

@@ -111,6 +111,18 @@ nav {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+@media only screen and (min-width: 993px) {
+  .container__portfolio-items {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .container__portfolio-items {
+    width: 40%;
+  }
+}
+
 /* ABOUT */
 
 span.new.badge {
